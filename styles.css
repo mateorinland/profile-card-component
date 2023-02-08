@@ -99,11 +99,19 @@ body {
     border-radius: 50%;
     border: 5px solid white;
     margin: -50px auto 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bio-section {
+    height: 275px;
 }
 
 .bio-section h1 {
     font-size: 1rem;
     color: hsl(229, 23%, 23%);
+    margin-top: 4rem;
 }
 
 .bio-section h1 span {
@@ -115,6 +123,11 @@ body {
     color: hsl(227, 10%, 46%);
     font-weight: 400;
     font-size: 0.8rem;
+}
+
+hr {
+  margin-top: 1px;
+  border: none;
 }
 
 .stats-section{
