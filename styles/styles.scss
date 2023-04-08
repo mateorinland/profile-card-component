@@ -1,0 +1,137 @@
+@import "reset";
+
+$Dark_cyan: hsl(185, 75%, 39%);
+$Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+$Dark_grayish_blue: hsl(227, 10%, 46%);
+$Dark_gray: hsl(0, 0%, 59%);
+
+//The designs were created to the following widths:
+//- Mobile: 375px
+//- Desktop: 1440px
+
+body {
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-family: "Kumbh Sans", sans-serif;
+  text-align: center;
+  background-color: $Dark_cyan;
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-position: left -12.5rem bottom 23.75rem,
+    right -12.5rem top 23.75rem;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+@media screen and (min-width: 24rem) {
+    .body {
+        padding: 1rem;
+    }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 1rem 2rem 7rem hsl(195, 75%, 39%);
+}
+
+.bio-container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 24rem) {
+    .bio-container {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.profile-picture {
+  border-radius: 5rem;
+  border: 0.35rem solid white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-name {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: $Dark_grayish_blue;
+  margin-top: 4.3rem;
+}
+
+.bold-text {
+    font-weight: 700;
+    color: $Very_dark_desaturated_blue;
+}
+
+.user-city {
+  color: $Dark_grayish_blue;
+  font-weight: 400;
+  font-size: 0.85rem;
+  margin: 0.3rem;
+}
+
+.stats-container {
+  color: $Very_dark_desaturated_blue;
+  border-top: 0.1rem solid lightgray;
+  width: 100%;
+}
+
+@media screen and (min-width: 24rem) {
+    .stats-container {
+        padding: 0 1.5rem;
+    }
+}
+
+.stats-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 24rem) {
+    .stats-list {
+        gap: 2.5rem;
+    }
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-weight: 700;
+}
+
+.list-item-type {
+  color: #727272; //Replaced FrontendMentor's color code with one compliant with accessibility color contrast specifications as per Accessibility Insights
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 0.65rem;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  color: hsl(213, 8%, 26%);
+}
+
+.attribution-link {
+  color: hsl(217, 83%, 45%);
+}
