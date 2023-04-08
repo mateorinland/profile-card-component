@@ -1,9 +1,9 @@
 # Profile card component
 My solution for Frontend Mentor's profile card component challenge.
 
-Using HTML5 and CSS3.
+Using HTML5, CSS3 + SASS.
 * Semantic markup.
-* Accessibility (landmarks, alt text).
+* Accessibility Insights full assessment completed.
 * Flexbox.
 
 View here: https://profile-card-component-delta-six.vercel.app/
