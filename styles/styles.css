@@ -1,0 +1,199 @@
+/*---------------------------
+ ** CSS Reset
+-----------------------------*/
+/* See https://piccalil.li/blog/a-modern-css-reset/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-family: "Kumbh Sans", sans-serif;
+  text-align: center;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-position: left -12.5rem bottom 23.75rem, right -12.5rem top 23.75rem;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+@media screen and (min-width: 24rem) {
+  .body {
+    padding: 1rem;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 1rem 2rem 7rem hsl(195, 75%, 39%);
+}
+
+.bio-container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 24rem) {
+  .bio-container {
+    margin-bottom: 0.5rem;
+  }
+}
+.profile-picture {
+  border-radius: 5rem;
+  border: 0.35rem solid white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-name {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: hsl(227, 10%, 46%);
+  margin-top: 4.3rem;
+}
+
+.bold-text {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+.user-city {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  font-size: 0.85rem;
+  margin: 0.3rem;
+}
+
+.stats-container {
+  color: hsl(229, 23%, 23%);
+  border-top: 0.1rem solid lightgray;
+  width: 100%;
+}
+
+@media screen and (min-width: 24rem) {
+  .stats-container {
+    padding: 0 1.5rem;
+  }
+}
+.stats-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+@media screen and (min-width: 24rem) {
+  .stats-list {
+    gap: 2.5rem;
+  }
+}
+.list-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-weight: 700;
+}
+
+.list-item-type {
+  color: #727272;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 0.65rem;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  color: hsl(213, 8%, 26%);
+}
+
+.attribution-link {
+  color: hsl(217, 83%, 45%);
+}/*# sourceMappingURL=styles.css.map */
