@@ -1,29 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Profile card component</title>
-</head>
-<body>
-    <main class="container">
-        <section class="bio-section">
-            <img class="card-pattern" src="./images/bg-pattern-card.svg" alt="Decorative motif">
-            <img class="profile-picture" src="./images/image-victor.jpg" alt="A young man with mountains in the background">
-            <h1>Victor Crest <span>26</span></h1>
-            <p>London</p>
-        </section>
-        <hr>
-        <div class="stats-section">
-            <ul class="stats-list">
-                <li>80K <span>Followers</span></li>
-                <li>803K <span>Likes</span></li>
-                <li>1.4K <span>Photos</span></li>
-            </ul>
-        </div>
+  </head>
+  <body>
+    <main class="card">
+      <div class="bio-container">
+        <img
+          class="card-pattern"
+          src="./images/bg-pattern-card.svg"
+          alt=""
+        />
+        <img
+          class="profile-picture"
+          src="./images/image-victor.jpg"
+          alt="A young man with mountains in the background"
+        />
+        <h1 class="user-name">
+          <strong class="bold-text">Victor Crest</strong>&nbsp 26
+        </h1>
+        <p class="user-city">London</p>
+      </div>
+      <div class="stats-container">
+        <ul class="stats-list">
+          <li class="list-item">
+            80K <span class="list-item-type">Followers</span>
+          </li>
+          <li class="list-item">
+            803K <span class="list-item-type">Likes</span>
+          </li>
+          <li class="list-item">
+            1.4K <span class="list-item-type">Photos</span>
+          </li>
+        </ul>
+      </div>
     </main>
-</body>
+    <footer>
+      <p class="attribution">
+        Coded by
+        <a
+          class="attribution-link"
+          href="https://www.linkedin.com/in/mateo-rinland-9b1a93bb/"
+          aria-label="Mateo Rinland's LinkedIn profile"
+          >Mateo Rinland</a
+        >. Challenge by
+        <a
+          class="attribution-link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >.
+      </p>
+    </footer>
+  </body>
 </html>
